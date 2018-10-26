@@ -55,7 +55,6 @@ body {
 HEADER
 ======
 */
-
 #header {
     background-size: cover;
     width: 100%;   
@@ -63,14 +62,14 @@ HEADER
 }
 
 #header h1 {
-    padding-top: 10%;
-    font-size: 500%;
-    font-weight: 500;
+    padding-top: 5%;
+    font-size: 300%;
+    font-weight: 600;
 }
 
 #header span{
     padding-left: 1%;
-    font-size: 130%;
+    font-size: 100%;
     font-weight: 400;
 }
 
@@ -79,12 +78,33 @@ HEADER
     letter-spacing: 4px;
     font-family: 'Advent Pro', sans-serif;
 }
+@media screen and (min-width: 0px) {
+    #header {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    #header h1 {
+        padding-top: 10%;
+        font-size: 500%;
+        font-weight: 500;
+    }
+
+    #header span{
+        padding-left: 1%;
+        font-size: 130%;
+        font-weight: 400;
+    }
+}
 
 /*
 ===========
 DESCRIPTION
 ===========
 */
+
 
 /*
 ======
@@ -95,6 +115,7 @@ FOOTER
 #social {
     text-align: center;
     padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #social i {
