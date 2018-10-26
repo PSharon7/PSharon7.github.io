@@ -78,12 +78,6 @@ HEADER
     letter-spacing: 4px;
     font-family: 'Advent Pro', sans-serif;
 }
-@media screen and (min-width: 0px) {
-    #header {
-        text-align: center;
-    }
-
-}
 
 @media screen and (min-width: 500px) {
     #header h1 {
