@@ -62,7 +62,7 @@ HEADER
 }
 
 #header h1 {
-    padding-top: 5%;
+    padding-top: 3%;
     font-size: 300%;
     font-weight: 600;
 }
@@ -133,12 +133,21 @@ body, .page {
     display: block;
 }
 
+.icondiv{
+    font-size: 0;
+}
+
 ul .icon: hover {
     opacity: 0.5;
 }
 
 .page .icon .title {
-    line-height: 2;
+    line-height: 1.5;
+}
+
+.hint {
+    line-height: 1.5;
+    padding-bottom: 2%;
 }
 
 #t1:target ul .icon,
@@ -172,7 +181,7 @@ ul {
     height: 100%;
     width: 7%;
     padding-top: 60%;
-    padding-left: 0;
+    padding-left: 2%;
     text-align: center;
 }
 
@@ -193,11 +202,11 @@ ul {
 }
 
 .title {
-    font-size: 30%;
+    font-size: 35%;
 }
 
 .hint {
-    font-size: 20px;
+    font-size: 20%;
 }
 
 .page .icon {
@@ -206,7 +215,7 @@ ul {
     bottom: 0;
     right: 10%;
     left: 0;
-    height: 170px;
+    height: 50%;
     margin: auto;
     text-align: center;
     font-size: 80px;
@@ -297,7 +306,19 @@ FOOTER
         font-size: 220%;
     }
 
+    .icondiv{
+        font-size: 100%;
+    }
+
     .title {
         font-size: 50%;
+    }
+
+    .hint {
+        font-size: 20px;
+    }
+
+    .page .icon {
+        height: 40%;
     }
 }
