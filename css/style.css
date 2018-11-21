@@ -78,7 +78,7 @@ HEADER
     letter-spacing: 4px;
 }
 
-h1, span, p {
+h1, span, p, a {
     font-family: 'Advent Pro', sans-serif;
 }
 
@@ -146,10 +146,15 @@ ul .icon: hover {
     line-height: 1.5;
 }
 
-.hint {
+.hint, .link {
     line-height: 1.5;
     padding-bottom: 2%;
 }
+
+.link {
+    margin-top: -2%;
+}
+
 
 #t1:target ul .icon,
 #t2:target ul .icon,
@@ -195,14 +200,22 @@ ul {
 }
 
 a {
-  text-decoration: none;
+    color: #eee;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+    text-decoration-line: none;
 }
 
 #menu a:hover {
     text-decoration-line: none;
 }
 
-.title, .hint {
+.title, .hint, .link {
     display: block;
 }
 
@@ -210,7 +223,7 @@ a {
     font-size: 35%;
 }
 
-.hint {
+.hint, .link {
     font-size: 20%;
 }
 
@@ -310,7 +323,7 @@ FOOTER
         font-size: 50%;
     }
 
-    .hint {
+    .hint, .link {
         font-size: 20px;
     }
 
