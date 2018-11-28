@@ -82,6 +82,14 @@ h1, span, p, a {
     font-family: 'Advent Pro', sans-serif;
 }
 
+p{
+    font-weight: 300;
+}
+
+a {
+    font-weight: 200;
+}
+
 
 /*
 ===========
