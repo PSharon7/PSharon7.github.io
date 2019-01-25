@@ -98,8 +98,7 @@ DESCRIPTION
 */
 
 .page {
-    z-index: -1;
-    width: 105%;
+    z-index: 0;
     height: 80%;
     margin: 0;
     padding: 0;
@@ -114,16 +113,18 @@ DESCRIPTION
 
 .page {
     position: fixed;
+    width: 105%;
 }
 
-#p1, #p2, #p3, #p4 {
-    left: 205%;
+#p1, #p2, #p3, #p4, #p5 {
+    left: 210%;
 }
 
 #t1:target #p1,
 #t2:target #p2,
 #t3:target #p3,
-#t4:target #p4 {
+#t4:target #p4,
+#t5:target #p5 {
     transform: translateX(-190%);
     -webkit-transform: translateX(-190%);
     -moz-transform: translateX(-190%);
@@ -133,7 +134,8 @@ DESCRIPTION
 
 #t2:target #p1 .icon, 
 #t3:target #p1 .icon,
-#t4:target #p1 .icon {
+#t4:target #p1 .icon,
+#t5:target #p1 .icon {
     -webkit-filter: blur(3px);
 }
 
@@ -168,7 +170,8 @@ ul .icon: hover {
 #t1:target ul .icon,
 #t2:target ul .icon,
 #t3:target ul .icon,
-#t4:target ul .icon{
+#t4:target ul .icon,
+#t5:target ul .icon{
     transform: scale(.6);
     -webkit-transform: scale(.6);
     -moz-transform: scale(.6);
@@ -179,14 +182,16 @@ ul .icon: hover {
 #t1:target #silly,
 #t2:target #code,
 #t3:target #game,
-#t4:target #sports {
+#t4:target #sports,
+#t5:target #video {
     transform: scale(1.2) !important;
     -webkit-transform: scale(1.2) !important;
     -moz-transform: scale(1.2) !important;
     -o-transform: scale(1.2) !important;
 }
 
-ul {
+ul {    
+    z-index: 1;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -195,7 +200,7 @@ ul {
     height: 100%;
     width: 20%;  
     padding: 0;
-    padding-top: 60%;
+    padding-top: 50%;
     padding-left: 2%;
     text-align: center;
 }
@@ -234,6 +239,7 @@ a:hover {
 
 .hint, .link {
     font-size: 20%;
+    letter-spacing: 1.5px;
 }
 
 .page .icon {
@@ -261,7 +267,8 @@ a:hover {
 #icon1,
 #icon2,
 #icon3,
-#icon4 {
+#icon4,
+#icon5 {
     margin: 0;
     padding: 20% 0 0 0;
     height: 100%;
@@ -271,7 +278,8 @@ a:hover {
 #t1:target .page#p1 .icon,
 #t2:target .page#p2 .icon,
 #t3:target .page#p3 .icon,
-#t4:target .page#p4 .icon {
+#t4:target .page#p4 .icon,
+#t5:target .page#p5 .icon {
     transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
     -moz-transform: translateX(0) !important;
@@ -357,14 +365,22 @@ FOOTER
     .page .icon {
         height: 40%;
     }
+
+    #p1, #p2, #p3, #p4, #p5 {
+        left: 205%;
+    }
+
+    .page {
+        width: 105%;
+    }
 }
 
 @media screen and (min-width: 800px) {
-    #icon1, #icon4 {
+    #icon4, #icon5 {
         padding: 15% 0 0 0;
     }
 
-    #icon2 {
+    #icon1, #icon2 {
         padding: 10% 0 0 0;
     }
 
