@@ -97,8 +97,9 @@ DESCRIPTION
 ===========
 */
 
-html, body, .page {
-    width: 100%;
+.page {
+    z-index: -1;
+    width: 105%;
     height: 80%;
     margin: 0;
     padding: 0;
@@ -116,7 +117,7 @@ html, body, .page {
 }
 
 #p1, #p2, #p3, #p4 {
-    left: 200%;
+    left: 205%;
 }
 
 #t1:target #p1,
@@ -257,12 +258,14 @@ a:hover {
     -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
 }
 
-#icon3 {
+#icon1,
+#icon2,
+#icon3,
+#icon4 {
     margin: 0;
-    padding: 10% 0;
+    padding: 20% 0 0 0;
     height: 100%;
 }
-
 
 
 #t1:target .page#p1 .icon,
@@ -331,6 +334,14 @@ FOOTER
         font-size: 220%;
     }
 
+    #icon2 {
+        padding: 13% 0 0 0;
+    }
+
+    #icon3 {
+        padding: 10% 0 0 0;
+    }
+
     .icondiv{
         font-size: 100%;
     }
@@ -345,5 +356,19 @@ FOOTER
 
     .page .icon {
         height: 40%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #icon1, #icon4 {
+        padding: 15% 0 0 0;
+    }
+
+    #icon2 {
+        padding: 10% 0 0 0;
+    }
+
+    #icon3 {
+        padding: 7% 0 0 0;
     }
 }
