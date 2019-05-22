@@ -116,7 +116,7 @@ DESCRIPTION
     width: 105%;
 }
 
-#p1, #p2, #p3, #p4, #p5 {
+#p1, #p2, #p3, #p4, #p5, #page-work {
     left: 210%;
 }
 
@@ -124,7 +124,8 @@ DESCRIPTION
 #t2:target #p2,
 #t3:target #p3,
 #t4:target #p4,
-#t5:target #p5 {
+#t5:target #p5,
+#work-ex:target #page-work {
     transform: translateX(-190%);
     -webkit-transform: translateX(-190%);
     -moz-transform: translateX(-190%);
@@ -135,7 +136,8 @@ DESCRIPTION
 #t2:target #p1 .icon, 
 #t3:target #p1 .icon,
 #t4:target #p1 .icon,
-#t5:target #p1 .icon {
+#t5:target #p1 .icon,
+#work-ex:target #p1 .icon {
     -webkit-filter: blur(3px);
 }
 
@@ -145,7 +147,7 @@ DESCRIPTION
     display: block;
 }
 
-ul .icon: hover {
+ul .icon:hover {
     opacity: 0.5;
 }
 
@@ -171,7 +173,8 @@ ul .icon: hover {
 #t2:target ul .icon,
 #t3:target ul .icon,
 #t4:target ul .icon,
-#t5:target ul .icon{
+#t5:target ul .icon,
+#work-ex:target ul .icon{
     transform: scale(.6);
     -webkit-transform: scale(.6);
     -moz-transform: scale(.6);
@@ -183,7 +186,8 @@ ul .icon: hover {
 #t2:target #code,
 #t3:target #game,
 #t4:target #sports,
-#t5:target #video {
+#t5:target #video,
+#work-ex:target #work-experience {
     transform: scale(1.2) !important;
     -webkit-transform: scale(1.2) !important;
     -moz-transform: scale(1.2) !important;
@@ -279,7 +283,8 @@ a:hover {
 #t2:target .page#p2 .icon,
 #t3:target .page#p3 .icon,
 #t4:target .page#p4 .icon,
-#t5:target .page#p5 .icon {
+#t5:target .page#p5 .icon,
+#work-ex:target .page#page-work .icon {
     transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
     -moz-transform: translateX(0) !important;
@@ -366,7 +371,7 @@ FOOTER
         height: 40%;
     }
 
-    #p1, #p2, #p3, #p4, #p5 {
+    #p1, #p2, #p3, #p4, #p5, #page-work {
         left: 205%;
     }
 
