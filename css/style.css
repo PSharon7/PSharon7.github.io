@@ -62,8 +62,8 @@ HEADER
 }
 
 #header h1 {
-    padding-top: 3%;
-    font-size: 300%;
+    padding-top: 8%;
+    font-size: 270%;
     font-weight: 600;
 }
 
@@ -143,7 +143,7 @@ DESCRIPTION
 
 .icon {
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
     display: block;
 }
 
@@ -155,19 +155,18 @@ ul .icon:hover {
     font-size: 0;
 }
 
-.page .icon .title {
-    line-height: 1.5;
-}
-
-.hint, .link {
+.title {
     line-height: 1.5;
     padding-bottom: 2%;
 }
 
-.link {
-    margin-top: -2%;
+.sub-title, .hint, .link {
+    line-height: 1.5;
 }
 
+.detail {
+    padding-bottom: 6%;
+}
 
 #t1:target ul .icon,
 #t2:target ul .icon,
@@ -233,7 +232,7 @@ a:hover {
     text-decoration-line: none;
 }
 
-.title, .hint, .link {
+.title, .sub-title, .hint, .link {
     display: block;
 }
 
@@ -241,9 +240,18 @@ a:hover {
     font-size: 35%;
 }
 
+.sub-title {
+    font-size: 25%;
+    letter-spacing: 2px;
+}
+
 .hint, .link {
     font-size: 20%;
     letter-spacing: 1.5px;
+}
+
+.hint {
+    margin-bottom: 4px;
 }
 
 .page .icon {
@@ -269,6 +277,7 @@ a:hover {
 }
 
 #icon1,
+#icon-work,
 #icon2,
 #icon3,
 #icon4,
@@ -313,7 +322,7 @@ FOOTER
 }
 
 #social i {
-    font-size: 200%;
+    font-size: 170%;
     color: #ffffff;
 }
 
@@ -323,7 +332,8 @@ FOOTER
 
 @media screen and (min-width: 500px) {
     #header h1 {
-        font-size: 500%;
+        padding-top: 4%;
+        font-size: 450%;
         font-weight: 500;
     }
 
@@ -347,6 +357,10 @@ FOOTER
         font-size: 220%;
     }
 
+    #icon-work {
+        padding: 13% 0 0 0;
+    }
+
     #icon2 {
         padding: 13% 0 0 0;
     }
@@ -363,8 +377,20 @@ FOOTER
         font-size: 50%;
     }
 
+    .sub-title {
+        font-size: 33%;
+    }
+
     .hint, .link {
         font-size: 20px;
+    }
+
+    .hint {
+        margin-bottom: 3px;
+    }
+
+    .detail {
+        padding-bottom: 2%;
     }
 
     .page .icon {
@@ -378,6 +404,10 @@ FOOTER
     .page {
         width: 105%;
     }
+
+    #social i {
+        font-size: 200%;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -385,11 +415,7 @@ FOOTER
         padding: 15% 0 0 0;
     }
 
-    #icon1, #icon2 {
+    #icon1, #icon-work, #icon2, #icon3 {
         padding: 10% 0 0 0;
-    }
-
-    #icon3 {
-        padding: 7% 0 0 0;
     }
 }

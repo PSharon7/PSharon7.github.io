@@ -11,7 +11,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Barlow:900" rel="stylesheet">
-        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
         <script src="lib/jquery/jquery.min.js"></script>
@@ -26,7 +26,7 @@
         <div id="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-10 offset-1">
                         <h1> SHARON LIU </h1>
                         <span class="txt-rotate" data-period="2000" data-rotate='[ "DEVELOPER.", "TABLE TENNIS PLAYER.", "GAME LOVER.", "BOBA‘s MOM.", "SJTUer & USCer." ]'></span>
                     </div>
@@ -61,10 +61,16 @@
                 <section class="icon" id="icon-work">
                     <div class="icondiv fas fa-laptop-code"></div>
                     <span class="title">Work Experience</span>
-                    <p class="hint">Microsoft</p>
-                    <p class="hint">SDE Intern | Shanghai, China</p>
-                    <p class="hint">Unity</p>
-                    <p class="hint">Backend Engineer Intern | San Francisco, US</p>
+                    <div class="detail">
+                        <p class="sub-title">Microsoft</p>
+                        <p class="hint">SDE Intern</p>
+                        <p class="hint"><i class="fas fa-map-pin"></i> Shanghai, China</p>
+                    </div>
+                    <div class="detail">
+                        <p class="sub-title">Unity</p>
+                        <p class="hint">Backend Engineer Intern</p>
+                        <p class="hint"><i class="fas fa-map-pin"></i> San Francisco, US</p>
+                    </div>
                 </section>
                 </div>  
 
@@ -72,10 +78,14 @@
             <section class="icon" id="icon2">
                 <div class="icondiv fas fa-keyboard"></div>
                 <span class="title">Web Developer</span>
-                <p class="hint">Back-end | Front-end</p>
-                <a href="http://cuprite.co/" class="link">CupRite</a>
+                <div class="detail">
+                    <p class="hint">Back-end | Front-end</p>
+                    <a href="http://cuprite.co/" class="link">CupRite</a>
+                </div>
                 <span class="title">Game Developer</span>
-                <p class="hint">C# | C++ | PYTHON | JAVA</p>
+                <div class="detail">
+                    <p class="hint">C# | C++ | PYTHON | JAVA</p>
+                </div>
             </section>
             </div>  
 
@@ -84,20 +94,28 @@
                 <div class="icondiv fas fa-gamepad"></div>
                 <span class="title">Game</span>
                 <p class="hint">Design | Development | Art</p>
-                <div class="col-md-6">
-                    <p class="hint">2D</p>
-                    <a href="https://sites.google.com/usc.edu/secret-of-runes/home" class="link">Secret of Runes</a>    
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="detail">
+                                <p class="hint">2D</p>
+                                <a href="https://sites.google.com/usc.edu/secret-of-runes/home" class="link">Secret of Runes</a>    
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="detail">
+                                <p class="hint">3D</p>
+                                <a href="https://github.com/PSharon7/MINI-PUBG" class="link">Minecraft</a>    
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-6">
+                            <div class="detail">
+                                <p class="hint">VR</p>
+                                <a href="https://sites.google.com/usc.edu/whatsup/home" class="link">UP</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <p class="hint">3D</p>
-                    <a href="https://github.com/PSharon7/MINI-PUBG" class="link">Minecraft</a>    
-                </div>
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
-                    <p class="hint">VR</p>
-                    <a href="https://sites.google.com/usc.edu/whatsup/home" class="link">UP</a>
-                </div>
-                
             </section>
             </div>
 
@@ -128,27 +146,21 @@
         <div class="footer" id="social">
             <div class="container">
                 <div class="row centered">
-
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-2">
-                        <a href="https://github.com/PSharon7"><i class="fab fa-github"></i></a>
+                    <div class="col-2 offset-1">
+                        <a href="https://github.com/PSharon7"><i class="icon fab fa-github"></i></a>
                     </div>
-                    <div class="col-xs-2">
-                        <a href="https://www.instagram.com/psharon7/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <div class="col-2">
+                        <a href="https://www.instagram.com/psharon7/?hl=en"><i class="icon fab fa-instagram"></i></a>
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-2">
                         <a href="https://www.linkedin.com/in/zhilin-liu-6311049a/"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-2">
                         <a href="https://www.facebook.com/profile.php?id=100010079080708"><i class="fab fa-facebook"></i></a>
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-2">
                         <a href="https://www.youtube.com/channel/UCXyjiv2APlVicbY8mQOmIBw/featured"><i class="fab fa-youtube"></i></a>
                     </div>
-
-                    <div class="col-xs-1"></div>
-
-                    
                 </div>
             </div>
         </div>
